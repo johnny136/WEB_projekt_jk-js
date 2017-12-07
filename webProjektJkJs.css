@@ -1,0 +1,260 @@
+.container {
+    padding: 0 1rem;
+    max-width: 100%;
+}
+
+
+
+header .background {
+    background: url("http://wallpaperstock.net/bridge_wallpapers_26119_1920x1080.jpg") center center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	text-shadow: 1.7px 1.7px black;
+}
+
+
+
+	
+footer {
+    padding: 1rem 1rem;
+}
+
+section {
+    padding: 3rem 0;
+	background-color: #C6FFC4;
+}
+section h1 {
+	text-shadow: 1.7px 1.7px #CCCCCC;
+}
+
+section:nth-child(odd) {
+    background-color: #25AD00;
+    color: white;
+}
+section:nth-child(odd) h1 {
+	text-shadow: 1.7px 1.7px black;
+}
+
+nav {
+    background-color: #00A025;
+	border-bottom: 1px solid black;
+	-webkit-box-shadow: 0px 0px 8px 2spx #000000;
+       -moz-box-shadow: 0px 0px 8px 2px #000000;
+            box-shadow: 0px 0px 8px 2px #000000;
+	position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav a {
+    padding: 1rem 2rem;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Verdana, sans-serif;
+	text-shadow: 1px 1px black;
+}
+
+.icon {
+	display: none;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+    background-color: #5B3F12;
+}
+
+#education figure {
+    text-align: center;
+}
+
+form input,
+form textarea {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 0.15rem solid rgba(91, 63, 18, 0.5);
+    background-color: #C6FFC4;
+    color: black;
+    display: block;
+    width: 75%;
+}
+
+form button {
+    background-color: white;
+    color: #245e75;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.6rem 0.8rem;
+}
+
+form button + button {
+    background-color: red;
+    color: white;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 40.063em) {
+		
+
+    header .background > div {
+        min-height: 200px;
+    }
+	
+	.topNavigation a:not(:first-child) {display: none;}
+	.topNavigation a.icon {
+		display: block;
+		background-color: initial;
+	}
+	
+	
+	
+	.topNavigation.responsive {position: relative;}
+	
+	.topNavigation.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+		.header-text {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .header-text h1,
+    .header-text p {
+        margin: 0;
+        color: white;
+        padding: 0;
+    }
+
+    .background > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 61.749em) and (min-width: 40.064em) {
+    nav a {
+        display: inline-block;
+    }
+	
+	.topNavigation a:not(:first-child) {display: none;}
+	.topNavigation a.icon {
+		display: block;
+		background-color: initial;
+	}
+	
+	
+	
+	.topNavigation.responsive {position: relative;}
+	
+	.topNavigation.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	.container {
+    padding: 0 2rem;
+    max-width: 100%;
+}
+
+    header .background > div {
+        min-height: 400px;
+    }
+	    .header-text {
+        padding: 2em;
+        background-color: rgba(91, 63, 18, 0.7);
+        border-radius: 1rem;
+        text-align: center;
+    }
+
+    .header-text h1,
+    .header-text p {
+        margin: 0;
+        color: white;
+        padding: 0;
+    }
+
+    .background > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 61.750em) {
+    .container {
+        width: 64em;
+        margin: 0 auto;
+    }
+
+	    nav a {
+        display: inline-block;
+    }
+	
+    header .background > div {
+        min-height: 400px;
+    }
+	    .header-text {
+        padding: 2em;
+        background-color: rgba(91, 63, 18, 0.7);
+        border-radius: 1rem;
+        text-align: center;
+    }
+
+    .header-text h1,
+    .header-text p {
+        margin: 0;
+        color: white;
+        padding: 0;
+    }
+
+    .background > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .background > div {
+        min-height: 600px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .flex-container figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 120.063em) {
+    nav a {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
