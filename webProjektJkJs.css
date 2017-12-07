@@ -1,48 +1,50 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .container {
     padding: 0 1rem;
     max-width: 100%;
+    overflow: hidden;
 }
-
-
 
 header .background {
-    background: url("http://wallpaperstock.net/bridge_wallpapers_26119_1920x1080.jpg") center center;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	text-shadow: 1.7px 1.7px black;
+    background: url("johndeere.jpg") center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-shadow: 1.7px 1.7px black;
 }
 
-
-
-	
 footer {
-    padding: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
+    background-color: #ca8e5f;
+    border-top: 1px solid;
 }
 
 section {
     padding: 3rem 0;
-	background-color: #C6FFC4;
+    background-color: #ca8e5f;
 }
+
 section h1 {
-	text-shadow: 1.7px 1.7px #CCCCCC;
+    text-shadow: 1.7px 1.7px #CCCCCC;
 }
 
 section:nth-child(odd) {
-    background-color: #25AD00;
+    background-color: #845c37;
     color: white;
 }
+
 section:nth-child(odd) h1 {
-	text-shadow: 1.7px 1.7px black;
+    text-shadow: 1.7px 1.7px black;
 }
 
 nav {
-    background-color: #00A025;
-	border-bottom: 1px solid black;
-	-webkit-box-shadow: 0px 0px 8px 2spx #000000;
-       -moz-box-shadow: 0px 0px 8px 2px #000000;
-            box-shadow: 0px 0px 8px 2px #000000;
-	position: sticky;
-    position: -webkit-sticky;
+    background-color: rgba(255, 255, 255, 0.33);
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1;
 }
@@ -54,33 +56,77 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-family: Arial, Verdana, sans-serif;
-	text-shadow: 1px 1px black;
+    text-shadow: 1px 1px black;
 }
 
 .icon {
-	display: none;
+    display: none;
 }
 
 nav a:hover,
 nav a:active,
 nav a:focus {
-    background-color: #5B3F12;
+    background-color: rgba(132, 92, 55, 0.7);
 }
 
 #education figure {
     text-align: center;
 }
 
-form input,
-form textarea {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    border-radius: 0.3rem;
-    border: 0.15rem solid rgba(91, 63, 18, 0.5);
-    background-color: #C6FFC4;
-    color: black;
-    display: block;
-    width: 75%;
+
+
+table {
+    max-width: 960px;
+    margin: 10px auto;
+}
+
+caption {
+    font-size: 1.6em;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+thead th {
+    font-weight: 400;
+    background: #8a97a0;
+    color: #FFF;
+}
+
+tr {
+    background: #f4f7f8;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+    background: #e8eeef;
+}
+
+th, td {
+    text-align: left;
+    padding: 20px;
+    font-weight: 300;
+}
+
+
+.tellMe input, textarea {
+    border: none;
+    border-bottom: 1.5px solid white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    outline: none;
+    padding-top: 15px;
+}
+
+.column-left {
+    width: 49%;
+    float: left;
+}
+
+.column-right {
+    width: 49%;
+    float: right;
 }
 
 form button {
@@ -92,7 +138,7 @@ form button {
 }
 
 form button + button {
-    background-color: red;
+    background-color: #5B3F12;
     color: white;
 }
 
@@ -101,39 +147,38 @@ form button:hover {
     background-color: #ccc;
 }
 
-table {
-    border-collapse: collapse;
-}
-
-table td, table th {
-    border: 1px solid black;
-    padding: 5px;
-}
-
 @media only screen and (max-width: 40.063em) {
-		
+    nav{
+        position: relative;
+        position: -webkit-sticky;
+        position: sticky;
+        background-color: #50a3e4;
+    }
 
     header .background > div {
         min-height: 200px;
     }
-	
-	.topNavigation a:not(:first-child) {display: none;}
-	.topNavigation a.icon {
-		display: block;
-		background-color: initial;
-	}
-	
-	
-	
-	.topNavigation.responsive {position: relative;}
-	
-	.topNavigation.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
-	}
-	
-		.header-text {
+
+    .topNavigation a:not(:first-child) {
+        display: none;
+    }
+
+    .topNavigation a.icon {
+        display: block;
+        background-color: initial;
+    }
+
+    .topNavigation.responsive {
+        position: relative;
+    }
+
+    .topNavigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-text {
         padding: 2em;
         text-align: center;
     }
@@ -156,36 +201,48 @@ table td, table th {
     nav a {
         display: inline-block;
     }
-	
-	.topNavigation a:not(:first-child) {display: none;}
-	.topNavigation a.icon {
-		display: block;
-		background-color: initial;
-	}
-	
-	
-	
-	.topNavigation.responsive {position: relative;}
-	
-	.topNavigation.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
-	}
-	
-	.container {
-    padding: 0 2rem;
-    max-width: 100%;
-}
+    nav {
+        position: relative;
+        position: -webkit-sticky;
+        position: sticky;
+        background-color: #50a3e4;
+    }
+
+    .topNavigation a:not(:first-child) {
+        display: none;
+    }
+
+    .topNavigation a.icon {
+        display: block;
+        background-color: initial;
+    }
+
+    .topNavigation.responsive {
+        position: relative;
+    }
+
+    .topNavigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .container {
+        padding: 0 2rem;
+        max-width: 100%;
+    }
 
     header .background > div {
         min-height: 400px;
     }
-	    .header-text {
+
+    .header-text {
         padding: 2em;
-        background-color: rgba(91, 63, 18, 0.7);
-        border-radius: 1rem;
+        background-color: rgba(255, 255, 255, 0.33);
+        border-radius: 8rem 0rem 8rem 0rem;
         text-align: center;
+        width: 50%;
+        align-self: center;
     }
 
     .header-text h1,
@@ -208,18 +265,21 @@ table td, table th {
         margin: 0 auto;
     }
 
-	    nav a {
+    nav a {
         display: inline-block;
     }
-	
+
     header .background > div {
-        min-height: 400px;
+        min-height: 600px;
     }
-	    .header-text {
+
+    .header-text {
         padding: 2em;
-        background-color: rgba(91, 63, 18, 0.7);
-        border-radius: 1rem;
+        background-color: rgba(255, 255, 255, 0.33);
+        border-radius: 8rem 0rem 8rem 0rem;
         text-align: center;
+        width: 50%;
+        align-self: center;
     }
 
     .header-text h1,
@@ -233,10 +293,6 @@ table td, table th {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    header .background > div {
-        min-height: 600px;
     }
 
     .flex-container {
