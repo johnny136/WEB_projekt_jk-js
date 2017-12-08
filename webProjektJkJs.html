@@ -32,7 +32,7 @@
     </div>
 </header>
 <main>
-    <section id="page1">
+    <section id="about">
         <div class="container">
             <h1>O nás</h1>
             <p>
@@ -49,9 +49,9 @@
             </p>
         </div>
     </section>
-    <section id="page2">
+    <section id="vehicles">
         <div class="container">
-            <h1>Výuka</h1>
+            <h1>Stroje</h1>
             <div class="flex-container">
                 <figure>
                     <img src="https://www.czu.cz/cache/article-data/czu/logo.png" width="150" height="100">
@@ -85,9 +85,9 @@
             </p>
         </div>
     </section>
-    <section id="page3">
+    <section id="history">
         <div class="container">
-            <h1>Věda a výzkum</h1>
+            <h1>Historie</h1>
             <p>
                 Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a
                 lectus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
@@ -102,65 +102,89 @@
             </ul>
         </div>
     </section>
-    <section id="page4">
+    <section id="locations">
         <div class="container">
             <h1>
-                Naši zaměstnanci
+                Pobočky ve světě
             </h1>
             <table>
-                <caption>Employee Information</caption>
                 <thead>
                 <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">E-mail</th>
-                    <th scope="col">Job role</th>
+                    <th scope="col">Název</th>
+                    <th scope="col">Adresa</th>
+                    <th scope="col">Země</th>
+                    <th scope="col">Telefon</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row">Nick Pettit</th>
-                    <td>nick@example.com</td>
-                    <td>Web Designer</td>
+                    <td>Deere & Company<br>
+                        World Headquarters
+                    </td>
+                    <td>Deere & Company<br>
+                        One John Deere Place<br>
+                        Moline IL 61265-8098
+                    </td>
+                    <td>Spojené státy<br>
+                        Americké
+                    </td>
+                    <td>1-309-765-8000</td>
                 </tr>
                 <tr>
-                    <th scope="row">Andrew Chalkley</th>
-                    <td>andrew@example.com</td>
-                    <td>Front-End Developer</td>
+                    <td>John Deere GmbH &<br>
+                        Co.KG
+                    </td>
+                    <td>John Deere GmbH & Co. KG<br>
+                        Mannheim Regional Center<br>
+                        John Deere GmbH & Co. KG<br>
+                        Region 2 Sales & Marketing Center<br>
+                        John Deere Strasse 70<br>
+                        68163 Mannheim
+                    </td>
+                    <td>Německo</td>
+                    <td>+49-621-829-01</td>
                 </tr>
                 <tr>
-                    <th scope="row">Dave McFarland</th>
-                    <td>dave@example.com</td>
-                    <td>Front-End Developer</td>
-                </tr>
-                <tr>
-                    <th scope="row">Guil Hernandez</th>
-                    <td>guil@example.com</td>
-                    <td>Web Designer</td>
+                    <td>Deere & Company<br>
+                        Regional Office
+                    </td>
+                    <td>Deere & Company<br>
+                        Escritório Regional<br>
+                        Latino Americano<br>
+                        Rodovia Ermênio de<br>
+                        Oliveira Penteado,
+                        km 57,5<br>
+                        Prédio 1<br>
+                        Indaiatuba - SP
+                    </td>
+                    <td>Brazil</td>
+                    <td>+55-19-3318-8100</td>
                 </tr>
                 </tbody>
             </table>
         </div>
     </section>
-    <section id="page5" class="tellMe">
+    <section id="contact" class="tellMe">
         <div class="container">
             <h1>Kontakt</h1>
             <div class="column-left">
-                <p>Napište nám!</p>
-                <p>
-                    Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus
-                    odio
-                    a
-                    lectus.
+                <p>Integer pellentesque quam vel velit. Praesent in mauris eu tortor porttitor accumsan. Duis sapien
+                    nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nullam justo enim, consectetuer nec,
+                    ullamcorper ac, vestibulum in, elit. Nam sed tellus id magna elementum tincidunt. Cras elementum.
+                    Donec quis nibh at felis congue commodo. Nam quis nulla. Proin mattis lacinia justo. Fusce tellus
+                    odio, dapibus id fermentum quis, suscipit id erat. Quisque tincidunt scelerisque libero. Sed
+                    convallis magna eu sem. Etiam quis quam. Mauris metus. Mauris suscipit, ligula sit amet pharetra
+                    semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam dictum tincidunt diam.
+                    Aliquam id dolor. Donec vitae arcu. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.
                 </p>
             </div>
             <div class="column-right">
                 <form action="webProjektJkJs.html" method="post">
                     <input type="text" name="predmet" placeholder="Předmět" required>
-                    <input type="email" name="email" placeholder="Váš_Email@adresa.com" required>
+                    <input type="email" name="email" placeholder="jméno@adresa.com" required>
                     <textarea name="email" placeholder="Zde zadejte obsah vaší zprávy" required></textarea>
                     <br>
-                    <button type="submit">Odeslat</button>
-                    <button type="reset">Smazat</button>
+                    <button type="submit" class="button"><span>Odeslat</span></button>
                 </form>
             </div>
         </div>

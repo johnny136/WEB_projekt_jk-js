@@ -80,26 +80,20 @@ table {
     margin: 10px auto;
 }
 
-caption {
-    font-size: 1.6em;
-    font-weight: 400;
-    padding: 10px 0;
-}
-
 thead th {
     font-weight: 400;
-    background: #8a97a0;
-    color: #FFF;
+    background: #b44e01;
+    color: white;
 }
 
 tr {
-    background: #f4f7f8;
-    border-bottom: 1px solid #FFF;
+    background: #fff1d7;
+    border-bottom: 1px solid white;
     margin-bottom: 5px;
 }
 
 tr:nth-child(even) {
-    background: #e8eeef;
+    background: #ffe5d1;
 }
 
 th, td {
@@ -129,22 +123,43 @@ th, td {
     float: right;
 }
 
-form button {
-    background-color: white;
-    color: #245e75;
-    border: none;
-    border-radius: 0.3rem;
-    padding: 0.6rem 0.8rem;
-}
-
-form button + button {
-    background-color: #5B3F12;
-    color: white;
-}
-
-form button:hover {
+.button {
+    text-align: center;
     cursor: pointer;
-    background-color: #ccc;
+    font-size:20px;
+    margin: 15px 0 0 0;
+    border-radius: 4px;
+    background-color:#fff1d7;
+    border: none;
+    padding: 15px;
+    width: 150px;
+    transition: all 0.5s;
+}
+
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 @media only screen and (max-width: 40.063em) {
@@ -152,7 +167,7 @@ form button:hover {
         position: relative;
         position: -webkit-sticky;
         position: sticky;
-        background-color: #50a3e4;
+        background-color: #8e7f64;
     }
 
     header .background > div {
@@ -195,7 +210,41 @@ form button:hover {
         flex-direction: column;
         justify-content: center;
     }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid #ccc; }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before { content: "Název"; }
+    td:nth-of-type(2):before { content: "Adresa"; }
+    td:nth-of-type(3):before { content: "Země"; }
+    td:nth-of-type(4):before { content: "Telefon"; }
 }
+
 
 @media only screen and (max-width: 61.749em) and (min-width: 40.064em) {
     nav a {
@@ -205,7 +254,7 @@ form button:hover {
         position: relative;
         position: -webkit-sticky;
         position: sticky;
-        background-color: #50a3e4;
+        background-color: #8e7f64;
     }
 
     .topNavigation a:not(:first-child) {
@@ -238,7 +287,7 @@ form button:hover {
 
     .header-text {
         padding: 2em;
-        background-color: rgba(255, 255, 255, 0.33);
+        background-color: rgba(255, 255, 255, 0.4);
         border-radius: 8rem 0rem 8rem 0rem;
         text-align: center;
         width: 50%;
@@ -275,7 +324,7 @@ form button:hover {
 
     .header-text {
         padding: 2em;
-        background-color: rgba(255, 255, 255, 0.33);
+        background-color: rgba(255, 255, 255, 0.4);
         border-radius: 8rem 0rem 8rem 0rem;
         text-align: center;
         width: 50%;
