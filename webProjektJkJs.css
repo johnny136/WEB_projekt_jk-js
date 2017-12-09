@@ -14,22 +14,42 @@ header .background {
     background: url("johndeere.jpg") center center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    text-shadow: 1.7px 1.7px black;
+    text-shadow: 1.2px 1.2px black;
 }
 
-footer {
-    padding: 0.5rem 0.5rem;
-    background-color: #ca8e5f;
-    border-top: 1px solid;
+nav {
+    background-color: rgba(214, 138, 89, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav a {
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Verdana, sans-serif;
+    text-shadow: 1px 1px black;
+    align-self: center;
+
+}
+
+nav a:hover,
+nav a:active {
+    background-color: rgba(132, 92, 55, 0.7);
 }
 
 section {
     padding: 3rem 0;
-    background-color: #ca8e5f;
+    background-color: #e2ab7f;
 }
 
 section h1 {
-    text-shadow: 1.7px 1.7px #CCCCCC;
+    text-shadow: 1.2px 1.2px #bbbbbb;
 }
 
 section:nth-child(odd) {
@@ -38,42 +58,21 @@ section:nth-child(odd) {
 }
 
 section:nth-child(odd) h1 {
-    text-shadow: 1.7px 1.7px black;
-}
-
-nav {
-    background-color: rgba(214, 138, 89, 0.70);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-}
-
-nav a {
-    padding: 1rem 2rem;
-    color: white;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: Arial, Verdana, sans-serif;
-    text-shadow: 1px 1px black;
+    text-shadow: 1.2px 1.2px #484848;
 }
 
 .icon {
     display: none;
 }
 
-nav a:hover,
-nav a:active,
-nav a:focus {
-    background-color: rgba(132, 92, 55, 0.7);
-}
 
-#education figure {
+figure {
     text-align: center;
 }
 
-
+figcaption {
+    margin-top: 10px;
+}
 
 table {
     max-width: 960px;
@@ -102,7 +101,6 @@ th, td {
     font-weight: 300;
 }
 
-
 .tellMe input, textarea {
     border: none;
     border-bottom: 1.5px solid white;
@@ -111,6 +109,10 @@ th, td {
     color: white;
     outline: none;
     padding-top: 15px;
+}
+
+.tellMe {
+    box-shadow: 20px 20px black;
 }
 
 .column-left {
@@ -126,16 +128,15 @@ th, td {
 .button {
     text-align: center;
     cursor: pointer;
-    font-size:20px;
+    font-size: 16px;
     margin: 15px 0 0 0;
     border-radius: 4px;
-    background-color:#fff1d7;
+    background-color: #fff1d7;
     border: none;
     padding: 15px;
-    width: 150px;
+    width: 120px;
     transition: all 0.5s;
 }
-
 
 .button span {
     cursor: pointer;
@@ -145,7 +146,7 @@ th, td {
 }
 
 .button span:after {
-    content: '»';
+    content: '📧';
     position: absolute;
     opacity: 0;
     top: 0;
@@ -162,12 +163,17 @@ th, td {
     right: 0;
 }
 
+footer {
+    padding: 0.05rem 0.05rem;
+    background-color: #e2ab7f;
+}
+
 @media only screen and (max-width: 40.063em) {
-    nav{
+    nav {
         position: relative;
         position: -webkit-sticky;
         position: sticky;
-        background-color: #8e7f64;
+        background-color: rgba(195, 137, 100, 1);
     }
 
     header .background > div {
@@ -196,6 +202,7 @@ th, td {
     .header-text {
         padding: 2em;
         text-align: center;
+        margin-top: 35%;
     }
 
     .header-text h1,
@@ -221,7 +228,9 @@ th, td {
         left: -9999px;
     }
 
-    tr { border: 1px solid #ccc; }
+    tr {
+        border: 1px solid #ccc;
+    }
 
     td {
         border: none;
@@ -239,22 +248,29 @@ th, td {
         white-space: nowrap;
     }
 
-    td:nth-of-type(1):before { content: "Název"; }
-    td:nth-of-type(2):before { content: "Adresa"; }
-    td:nth-of-type(3):before { content: "Země"; }
-    td:nth-of-type(4):before { content: "Telefon"; }
+    td:nth-of-type(1):before {
+        content: "Název";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Adresa";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Země";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Telefon";
+    }
 }
 
-
 @media only screen and (max-width: 61.749em) and (min-width: 40.064em) {
-    nav a {
-        display: inline-block;
-    }
     nav {
         position: relative;
         position: -webkit-sticky;
         position: sticky;
-        background-color: #8e7f64;
+        background-color: rgba(195, 137, 100, 1);
     }
 
     .topNavigation a:not(:first-child) {
@@ -307,16 +323,18 @@ th, td {
         flex-direction: column;
         justify-content: center;
     }
+    .flex-container figure {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (min-width: 61.750em) {
     .container {
         width: 64em;
         margin: 0 auto;
-    }
-
-    nav a {
-        display: inline-block;
     }
 
     header .background > div {
@@ -356,12 +374,5 @@ th, td {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-}
-
-@media only screen and (max-width: 120.063em) {
-    nav a {
-        padding-left: 3rem;
-        padding-right: 3rem;
     }
 }
