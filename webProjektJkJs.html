@@ -14,6 +14,7 @@
     <div class="container">
         <div class="topNavigation" id="navigation">
             <a href="javascript:void(0);" class="icon" onclick="menuRoll()">&#9776;</a>
+            <a href="#top">Domů</a>
             <a href="#about">O nás</a>
             <a href="#vehicles">Produkty</a>
             <a href="#history">Historie</a>
@@ -23,7 +24,7 @@
     </div>
 </nav>
 <header>
-    <div class="background">
+    <div class="background" id="top">
         <div class="container">
             <div class="header-text">
                 <h1>John Deere</h1>
@@ -58,16 +59,16 @@
             <h1>Produkty</h1>
             <div class="flex-container">
                 <figure>
-                    <img src="jd_tractor.png" width="220" height="140">
-                    <figcaption> Zemědělství </figcaption>
+                    <img src="jd_tractor.png" width="220" height="140" name="Zemědělství">
+                    <figcaption>Zemědělství</figcaption>
                 </figure>
                 <figure>
-                    <img src="jd_reel_mowers.png" width="220" height="140">
-                    <figcaption> Sportovní trávníky </figcaption>
+                    <img src="jd_reel_mowers.png" width="220" height="140" name="Sportovní trávníky">
+                    <figcaption>Sportovní trávníky</figcaption>
                 </figure>
                 <figure>
-                    <img src="jd_skidders.png" width="220" height="140">
-                    <figcaption> Lesnictví </figcaption>
+                    <img src="jd_skidders.png" width="220" height="140" name="Lesnictví">
+                    <figcaption>Lesnictví</figcaption>
                 </figure>
             </div>
             <p>Aenean placerat. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Curabitur vitae diam non enim vestibulum interdum. Etiam posuere lacus quis dolor. Nulla non lectus sed nisl molestie malesuada. Etiam egestas wisi a erat. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Etiam neque. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Integer imperdiet lectus quis justo. Integer lacinia. Nam sed tellus id magna elementum tincidunt. Mauris dictum facilisis augue. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam commodo dui eget wisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Nullam dapibus fermentum ipsum. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.</p>
@@ -158,9 +159,9 @@
             </div>
             <div class="column-right">
                 <form action="webProjektJkJs.html" method="post">
-                    <input type="text" name="predmet" placeholder="Předmět" required>
-                    <input type="email" name="email" placeholder="jméno@adresa.com" required>
-                    <textarea name="email" placeholder="Zde zadejte obsah vaší zprávy" required></textarea>
+                    <input type="text" name="Predmet" placeholder="Předmět" required>
+                    <input type="email" name="Email" placeholder="jméno@adresa.com" required>
+                    <textarea name="Obsah" placeholder="Zde zadejte obsah vaší zprávy" required></textarea>
                     <br>
                     <button type="submit" class="button"><span>Odeslat</span></button>
                 </form>
