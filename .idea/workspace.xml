@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df401b87-71b2-48dc-a706-3aa98930edc8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jquery.min.js" afterPath="$PROJECT_DIR$/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webProjektJkJs.css" afterPath="$PROJECT_DIR$/webProjektJkJs.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webProjektJkJs.html" afterPath="$PROJECT_DIR$/webProjektJkJs.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="webProjektJkJs.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="webProjektJkJs.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webProjektJkJs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="319">
+              <caret line="56" column="27" lean-forward="true" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -37,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webProjektJkJs.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="webProjektJkJs.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webProjektJkJs.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6477">
-              <caret line="381" column="1" lean-forward="true" selection-start-line="381" selection-start-column="1" selection-end-line="381" selection-end-column="1" />
+            <state relative-caret-position="-68">
+              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -86,8 +84,8 @@
       <list>
         <option value="$PROJECT_DIR$/webProjektJkJs.js" />
         <option value="$PROJECT_DIR$/jquery.min.js" />
-        <option value="$PROJECT_DIR$/webProjektJkJs.html" />
         <option value="$PROJECT_DIR$/webProjektJkJs.css" />
+        <option value="$PROJECT_DIR$/webProjektJkJs.html" />
       </list>
     </option>
   </component>
@@ -158,12 +156,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512826467676</updated>
-      <workItem from="1512826469766" duration="15369000" />
+      <workItem from="1512826469766" duration="16275000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15369000" />
+    <option name="totallyTimeSpent" value="16275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="995" y="0" width="932" height="1047" extended-state="0" />
@@ -207,14 +205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webProjektJkJs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -227,8 +217,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webProjektJkJs.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6477">
-          <caret line="381" column="1" lean-forward="true" selection-start-line="381" selection-start-column="1" selection-end-line="381" selection-end-column="1" />
+        <state relative-caret-position="-68">
+          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webProjektJkJs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="56" column="27" lean-forward="true" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
           <folding />
         </state>
       </provider>
