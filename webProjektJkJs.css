@@ -175,8 +175,7 @@ footer a {
 @media only screen and (max-width: 40.063em) {
     nav {
         position: relative;
-        position: -webkit-sticky;
-        position: sticky;
+        position: fixed;
         background-color: rgba(195, 137, 100, 1);
     }
 
@@ -268,14 +267,18 @@ footer a {
     td:nth-of-type(4):before {
         content: "Telefon";
     }
+
+    .column-left,
+    .column-right {
+        width: 100%;
+    }
 }
 
 /*Nastavení webu pro tablety*/
 @media only screen and (max-width: 61.749em) and (min-width: 40.064em) {
     nav {
         position: relative;
-        position: -webkit-sticky;
-        position: sticky;
+        position: fixed;
         background-color: rgba(195, 137, 100, 1);
     }
 
