@@ -104,7 +104,8 @@ th, td {
 
 .tellMe input, textarea {
     border: none;
-    border-bottom: 1.5px solid white;
+    border: 0.15rem solid rgba(226, 171, 127, 0.55);
+    border-radius: 0.25rem;
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
     color: white;
