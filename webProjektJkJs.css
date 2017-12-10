@@ -44,13 +44,16 @@ nav a:active,
 nav a:focus{
     background-color: rgba(132, 92, 55, 0.7);
 }
+h2 {
+    font-size: 2em;
+}
 
 section {
     padding: 3rem 0;
     background-color: #e2ab7f;
 }
 
-section h1 {
+section h2 {
     text-shadow: 1.2px 1.2px #bbbbbb;
 }
 
@@ -59,7 +62,7 @@ section:nth-child(odd) {
     color: white;
 }
 
-section:nth-child(odd) h1 {
+section:nth-child(odd) h2 {
     text-shadow: 1.2px 1.2px #484848;
 }
 
@@ -215,6 +218,10 @@ footer a {
         padding: 0;
     }
 
+    h2 {
+        font-size: 1.5em;
+    }
+
     .background > div {
         display: flex;
         flex-direction: column;
@@ -325,6 +332,10 @@ footer a {
         margin: 0;
         color: white;
         padding: 0;
+    }
+
+    h2 {
+        font-size: 1.5em;
     }
 
     .background > div {
