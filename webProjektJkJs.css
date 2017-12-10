@@ -162,8 +162,12 @@ th, td {
 }
 
 footer {
-    padding: 0.05rem 0.05rem;
+    padding-top: 0.05rem;
     background-color: #e2ab7f;
+}
+
+footer a {
+    color: black;
 }
 
 /*Nastavení webu pro telefony*/
