@@ -22,6 +22,7 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1;
 }
 
 nav a {
@@ -248,6 +249,7 @@ footer a {
         left: 6px;
         width: 45%;
         padding-right: 10px;
+        float: left;
         white-space: nowrap;
     }
 
